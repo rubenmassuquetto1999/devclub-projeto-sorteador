@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+img {
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 26px;
+}
+
+.inputs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    height: 74px;
+    width: 100%;
+    max-width: 342px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.resultado-container {
+    margin-top: 30px;
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.resultado-box {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    height: 74px;
+    width: 100%;
+    max-width: 342px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.erro-texto {
+    color: #ff6b6b;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 107, 107, 0.3);
+    width: 100%;
+    max-width: 342px;
+}
+
+button {
+    background: rgba(174, 195, 70, 1);
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 342px;
+    height: 72px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .inputs-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    input {
+        height: 64px;
+        font-size: 32px;
+    }
+
+    button,
+    .resultado-box {
+        height: 64px;
+        font-size: 32px;
+    }
+}
