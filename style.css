@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh; 
     padding: 20px;
 }
 
@@ -114,6 +114,11 @@ button:active {
 }
 
 @media (max-width: 768px) {
+    body {
+        justify-content: flex-start;
+        padding: 40px 20px; 
+    }
+
     .inputs-container {
         flex-direction: column;
         gap: 20px;
@@ -121,6 +126,8 @@ button:active {
 
     h2 {
         font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     input {
@@ -128,9 +135,14 @@ button:active {
         font-size: 32px;
     }
 
+    .resultado-container {
+        margin-top: 20px;
+    }
+
     button,
     .resultado-box {
         height: 64px;
         font-size: 32px;
+        margin-bottom: 20px;
     }
 }
